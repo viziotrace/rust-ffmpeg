@@ -127,5 +127,5 @@ optional = true
 
 [dependencies.ffmpeg-sys-next]
 git = "https://github.com/viziotrace/rust-ffmpeg-sys"
-branch = "hardware-accelerated"
+branch = "hardware-accelerated-nvdec"
 default-features = false
