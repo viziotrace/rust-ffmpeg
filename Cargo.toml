@@ -16,12 +16,12 @@ categories = ["multimedia"]
 
 [features]
 default = [
-    "codec",
-    "device",
-    "filter",
-    "format",
-    "software-resampling",
-    "software-scaling",
+  "codec",
+  "device",
+  "filter",
+  "format",
+  "software-resampling",
+  "software-scaling",
 ]
 
 # ffmpeg<xy> are obsolete features kept for backward compatibility purposes and
@@ -98,7 +98,7 @@ build-lib-xvid = ["ffmpeg-sys-next/build-lib-xvid"]
 # hardware acceleration
 build-videotoolbox = ["ffmpeg-sys-next/build-videotoolbox"]
 build-nvdec = ["ffmpeg-sys-next/build-nvdec"]
-build-vulkan = ["ffmpeg-sys-next/build-vulkan"]
+build-d3d12va = ["ffmpeg-sys-next/build-d3d12va"]
 
 # protocols
 build-lib-smbclient = ["ffmpeg-sys-next/build-lib-smbclient"]
@@ -127,5 +127,5 @@ optional = true
 
 [dependencies.ffmpeg-sys-next]
 git = "https://github.com/viziotrace/rust-ffmpeg-sys"
-branch = "hardware-accelerated-nvdec"
+rev = "acb1ca9691a09663054c4e958e370e61f131b801"
 default-features = false
